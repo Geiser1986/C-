@@ -1,0 +1,28 @@
+int main()
+{
+
+	double price;
+
+		printf (
+		"您购买的商品价格为"
+	);
+
+	scanf_s( "%lf/n",&price );
+
+	double  money;
+
+		printf (
+		"您付的钱数为"
+	);
+
+	scanf_s("%lf/n", &money);
+
+
+	double change;
+
+	change = money - price;
+
+		printf("找您零钱为%f",change);
+
+		return 0;
+}
