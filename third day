@@ -1,0 +1,16 @@
+int main()
+{
+	double ben;
+
+	printf("您存入的本金为");
+
+	scanf_s("%lf", &ben);
+
+	double mmm;
+
+	mmm = ben * 1.033 * 1.033 * 1.033;
+
+	printf("存一年期自动转存，三年后本加息为%f", mmm);
+
+		return 0;
+}
