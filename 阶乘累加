@@ -1,0 +1,48 @@
+
+#include <stdio.h>
+
+
+int main()
+{
+	/*double a=0;
+	double b=0;
+	scanf_s("%lf", &a);
+	scanf_s("%lf", &b);
+	printf("a+b=%f\n", a + b);
+	printf("a-b=%f\n", a - b);
+	printf("a*b=%f\n", a * b);
+	printf("a/b=%f\n", a/b);*/
+
+	int N = 0;
+	printf("请输入一个不超过12的正整数：");
+	scanf_s("%d", &N);
+
+	int a1 = 1;
+	int A = 0;
+	int a = 1;
+	int n = 1;
+	/*
+	a1用于计算
+	A用于储存
+	a用于计数
+	n二次计数
+	*/
+	if (N != 1) {
+		while (n <= N) {
+			while (a < n) {
+				a++;
+				a1 *= a1 + 1;
+			}
+			n++;
+			A = A + a1;
+			a1 = 1;
+			a = 1;
+		}
+	}
+	else {
+		A = 1;
+	}
+
+	printf("则1!+2!+3!....+N!为%d", A);
+		return 0;
+}
